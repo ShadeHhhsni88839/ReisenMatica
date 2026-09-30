@@ -1,27 +1,47 @@
-# Fabric Example Mod with StationAPI and BIN Mappings for beta 1.7.3 server + client
+# ReisenMatica
 
-## Setup
+## About
 
-Run the `_setup/setupMod` task and give it the inputs it needs. **This is a required step.**
+# Schematic mod for Beta 1.7.3(Babric), basically just copying and loading schems like projection on point for better building(if you have bad memory like me)
 
-[See the StationAPI wiki.](https://github.com/ModificationStation/StationAPI/wiki)
+## Controls
 
-## Common Issues
+**Num1:**
+create point1(must look on block with crosshair)
+**Num2:**
+create point2(must look on block with crosshair)
+**Num3:**
+save schematic
+**Num4:**
+load/next schematic
+**Num5:**
+enable/disable projection
+**Num6:**
+rotate projection(90°)
+**Num7:**
+lock/unlock projection(if you raised/lowered schematic it will stay on that Y position)
+**Num8:**
+raise projection
+**Num9:**
+lower projection
+**Num0:**
+list of schematics(green is selected schematic)
+**NumEnter:**
+menu for schematics(in development)
+**Subtract:**
+previous schematic
+**Decimal:**
+delete schematic(tap double for confirm)
+**Add:**
+opaque +10%
+**Multiply:**
+opaque -10%
+**Divide:**
+change between colors/textures on schematics
 
-**My project isn't building after updating babric loom/stationapi!**  
-Run a gradle task with `--refresh-dependencies` as an argument, and this should be fixed. If not, try deleting your project's `.gradle` folder, and try again.
+## Also
 
-**I get "Invalid source release: 17" as an error!**  
-Use Java 17. Open up `File > Project Structure` and change your SDK to Java 17.  
-If you still get the issue, you may need to go into `File > Settings > Build, Execution, Deployment > Build Tools > Gradle` and change the Java that Gradle uses too.
-
-**How do I stop server.properties from constantly changing?**  
-Remove the last line in the `gitignore` file.
-
-**My client hangs on a blank screen on trying to my test server!**  
-Open your `server.properties` and set `online-mode` to `false`.
-
-[Here for more issues.](https://github.com/calmilamsy/BIN-fabric-example-mod#common-issues)
+**Wrong blocks will glow red**
 
 ## License
 
