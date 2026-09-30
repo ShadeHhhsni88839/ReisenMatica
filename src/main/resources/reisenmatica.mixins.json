@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "%s.mixin",
+  "package": "io.github.shade.reisenmatica.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "ExampleMixin"
@@ -9,6 +9,7 @@
   "server": [
   ],
   "client": [
+    "ProjectionMixin"
   ],
   "injectors": {
     "defaultRequire": 1
